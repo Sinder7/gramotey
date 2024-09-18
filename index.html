@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центр развития "Грамотей"</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/fonts.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <div class="main__wrapper">
+        <div class="container">
+
+            <nav class="nav"><a href="/" class="logo"><img src="src/img/logo.png" alt=""></a> <a href="#"
+                    class="nav__text">Документация</a></nav>
+            <main class="main">
+                <div class="main__inner">
+                    <h1 class="heading__title">Частная школа "Грамотей"</h1>
+                    <p class="main__caption">
+                        Миссия нашей школы - создать все усовия, чтобы раскрыть потенциал каждого ученика и подготовить
+                        его к взролой жизни.</p>
+                    <button class="button">Связаться</button>
+                </div>
+                <div class="image">
+                    <img src="src/img/ьфшт_рукщ.svg" alt="Описание изображения">
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="container">
+        <div class="heading__title card-title">Программы обучения</div>
+        <div class="cards">
+            <div class="card" onclick="openModal('Модальное окно 1', 'Дополнительная информация о карточке 1.')">
+                <img src="https://via.placeholder.com/150" alt="Фото 1">
+                <h3>Заголовок 1</h3>
+                <p>Краткое описание 1.</p>
+            </div>
+            <div class="card" onclick="openModal('Модальное окно 2', 'Дополнительная информация о карточке 2.')">
+                <img src="https://via.placeholder.com/150" alt="Фото 2">
+                <h3>Заголовок 2</h3>
+                <p>Краткое описание 2.</p>
+            </div>
+            <div class="card" onclick="openModal('Модальное окно 3', 'Дополнительная информация о карточке 3.')">
+                <img src="https://via.placeholder.com/150" alt="Фото 3">
+                <h3>Заголовок 3</h3>
+                <p>Краткое описание 3.</p>
+            </div>
+            <div class="card" onclick="openModal('Модальное окно 3', 'Дополнительная информация о карточке 3.')">
+                <img src="https://via.placeholder.com/150" alt="Фото 3">
+                <h3>Заголовок 3</h3>
+                <p>Краткое описание 3.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
