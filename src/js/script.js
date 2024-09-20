@@ -16,7 +16,3 @@ window.onclick = function (event) {
     }
 }
 
-
-function goBack() {
-    window.history.back(); // Возвращаемся на предыдущую страницу
-}

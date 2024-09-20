@@ -30,44 +30,72 @@
             </main>
         </div>
     </div>
-    <div class="container">
-        <div class="heading__title card-title">Программы обучения</div>
-        <div class="cards">
-            <div class="card">
-                <img src="https://sun9-1.userapi.com/s/v1/ig2/aU0BtmZGyDAaMdJwqYmC36MzFqpv8T3cR5Dq3k8STSB1r7SCyYffd3C3pXVYy9PGI8qmli1X2t8Qh6T6PlMApwlI.jpg?size=1067x1067&quality=95&crop=0,0,1067,1067&ava=1"
-                    alt="Фото 1">
-                <h3>Основная программа</h3>
-                <p>В обучение включена основная программа и направление класса, которое выбрали его ученики.</p>
-                <a onclick="openModal('Модальное окно 1', 'Дополнительная информация о карточке 1.')">Узнать
-                    подробнее</a>
-            </div>
-            <div class="card" onclick="openModal('Модальное окно 2', 'Дополнительная информация о карточке 2.')">
-                <img src="https://via.placeholder.com/150" alt="Фото 2">
-                <h3>Заголовок 2</h3>
-                <p>Краткое описание 2.</p>
-            </div>
-            <div class="card" onclick="openModal('Модальное окно 3', 'Дополнительная информация о карточке 3.')">
-                <img src="https://via.placeholder.com/150" alt="Фото 3">
-                <h3>Заголовок 3</h3>
-                <p>Краткое описание 3.</p>
-            </div>
-            <div class="card" onclick="openModal('Модальное окно 3', 'Дополнительная информация о карточке 3.')">
-                <img src="https://via.placeholder.com/150" alt="Фото 3">
-                <h3>Заголовок 3</h3>
-                <p>Краткое описание 3.</p>
+    <section class="card_section">
+        <div class="container">
+            <div class="heading__title card-title">Программы обучения</div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card_img">
+                        <img src="src/img/card3.jpg" alt="Фото 1">
+                    </div>
+                    <h3>Основная программа</h3>
+                    <p>В обучение включена основная программа и направление класса, которое выбрали его ученики.</p>
+                    <a onclick="openModal('Модальное окно 1', 'Дополнительная информация о карточке 1.')">Узнать
+                        подробнее</a>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="src/img/card2.webp" alt="Фото 1">
+                    </div>
+                    <h3>Дополнительная программа</h3>
+                    <p>Программа строится на внеклассных активностях, которые не входят в основную программу обучения.
+                        .</p>
+                    <a onclick="openModal('Модальное окно 1', 'Дополнительная информация о карточке 1.')">Узнать
+                        подробнее</a>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="src/img/card.jpg" alt="Фото 1">
+                    </div>
+                    <h3>Летний лагерь</h3>
+                    <p>Каждый год ученики вместе с преподавателями ездят в летний лагерь. Это бесплатно и включено в
+                        программу в школу для всех учеников.</p>
+                    <a onclick="openModal('Модальное окно 1', 'Дополнительная информация о карточке 1.')">Узнать
+                        подробнее</a>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="src/img/card4.webp" alt="Фото 1">
+                    </div>
+                    <h3>Заочное обучение</h3>
+                    <p>Наша школа предлагает услуги заочного образования, если ученик не может ходить в школу. Обучение
+                        ведется по той же программе, что и в школе.</p>
+                    <a onclick="openModal('Модальное окно 1', 'Дополнительная информация о карточке 1.')">Узнать
+                        подробнее</a>
+                </div>
             </div>
         </div>
-    </div>
 
 
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-description"></p>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+            </div>
         </div>
-    </div>
-
+    </section>
+    <secion class="gallery">
+        <div class="container">
+            <div class="gallery__inner">
+                <div class="gallery__item--one"><img src="src/img/gallery2.jpg" alt=""></div>
+                <div class="gallery__row">
+                    <div class="gallery__item"><img src="src/img/gallery1.jpg" alt=""></div>
+                    <div class="gallery__item"><img src="src/img/gallery3.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </secion>
     <script src="src/js/script.js"></script>
 </body>
 

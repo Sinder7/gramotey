@@ -152,14 +152,16 @@ button:hover {
     border: none;
     border-radius: 8px;
     margin: 10px;
+    align-items: center;
     text-align: center;
-    width: 380px;
+    max-width: 380px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    padding-bottom: 25px;;
+    padding: 0 10px 25px 10px;;
 }
 
 .card h3 {
+    
     font-weight: bold;
     font-size: 26px;
     color: rgb(31, 63, 104);
@@ -172,20 +174,27 @@ button:hover {
     opacity: .8;
 }
 
-.card a{
+.card a {
     font-style: 24px;
     color: rgb(90, 152, 208);
 }
+
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(90, 152, 208, 0.3);
 }
 
-.card img {
+.card_img {
     margin: 50px 125px;
-    max-width: 130px;
-    max-height: 130px;
-    border-radius: 8px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.card_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
 .modal {
@@ -223,6 +232,39 @@ button:hover {
     cursor: pointer;
 }
 
+.gallery {}
+
+
+
+.gallery__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    padding: 50px 0;
+    border-top: 2px solid rgba(31, 63, 104, .5);
+    border-bottom: 2px solid rgba(31, 63, 104, .5);
+
+}
+
+.gallery__item {
+    width: 40%;
+    height: auto;
+}
+
+
+
+.gallery__item--one {
+    width: 85%;
+    margin-bottom: 15px;
+}
+
+.gallery__row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
     .main {
@@ -255,5 +297,15 @@ button:hover {
 @media (max-width: 460px) {
     .main__wrapper {
         height: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+    .card h3{
+        font-size: 20px;
+    }
+    .card p {
+        font-size: 16px;
+        white-space: normal;
     }
 }
