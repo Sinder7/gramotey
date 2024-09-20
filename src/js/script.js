@@ -15,3 +15,8 @@ window.onclick = function (event) {
         closeModal();
     }
 }
+
+
+function goBack() {
+    window.history.back(); // Возвращаемся на предыдущую страницу
+}

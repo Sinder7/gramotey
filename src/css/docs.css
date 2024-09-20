@@ -1,0 +1,18 @@
+.back-button {
+    position: fixed; /* Фиксируем кнопку на экране */
+    top: 20px; /* Отступ от нижней части экрана */
+    left: 20px; /* Отступ от правой части экрана */
+    background-color: #007BFF; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границы */
+    border-radius: 5px; /* Скругленные углы */
+    padding: 10px 15px; /* Внутренние отступы */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Курсор при наведении */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Цвет фона при наведении */
+}

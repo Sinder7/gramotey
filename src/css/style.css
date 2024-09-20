@@ -24,6 +24,7 @@ body {
 }
 
 .nav {
+    margin: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,13 +75,14 @@ body {
 }
 
 .main__wrapper {
-    height: 100vh;
+    height: 150%;
     width: 100%;
     background: rgb(152, 195, 232);
     background: linear-gradient(97deg, rgba(152, 195, 232, 1) 0%, rgba(152, 195, 232, 0.4906337535014006) 100%);
 }
 
 .main {
+    margin-bottom: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -116,7 +118,7 @@ body {
 
 .button {
     padding: 15px 46px;
-    background-color: #5A98D0;
+    background-color: rgb(90, 152, 208);
     color: white;
     font-size: 26px;
     border: none;
@@ -139,7 +141,7 @@ button:hover {
     justify-content: center;
 }
 
-.card-title{
+.card-title {
     text-align: center;
     margin-top: 40px;
     font-size: 64px;
@@ -150,24 +152,39 @@ button:hover {
     border: none;
     border-radius: 8px;
     margin: 10px;
-    padding: 20px;
     text-align: center;
     width: 380px;
-    transition: box-shadow 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    padding-bottom: 25px;;
 }
 
 .card h3 {
-    font-size: 30px;
-    color: #1F3F68;
+    font-weight: bold;
+    font-size: 26px;
+    color: rgb(31, 63, 104);
 }
 
+.card p {
+    font-style: 20px;
+    color: rgb(31, 63, 104);
+    margin-bottom: 36px;
+    opacity: .8;
+}
+
+.card a{
+    font-style: 24px;
+    color: rgb(90, 152, 208);
+}
 .card:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(90, 152, 208, 0.3);
 }
 
 .card img {
-    max-width: 350px;
+    margin: 50px 125px;
+    max-width: 130px;
+    max-height: 130px;
     border-radius: 8px;
 }
 
@@ -225,17 +242,18 @@ button:hover {
 }
 
 @media (max-width: 635px) {
-    .main__caption{
+    .main__caption {
         margin-bottom: 50px;
     }
-    .heading__title{
+
+    .heading__title {
         font-size: 50px;
     }
 
 }
 
 @media (max-width: 460px) {
-    .main__wrapper{
+    .main__wrapper {
         height: 100%;
     }
 }
