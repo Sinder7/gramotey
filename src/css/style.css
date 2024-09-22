@@ -152,16 +152,15 @@ button:hover {
     border: none;
     border-radius: 8px;
     margin: 10px;
-    align-items: center;
     text-align: center;
     max-width: 380px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    padding: 0 10px 25px 10px;;
+    padding: 0 10px 25px 10px;
 }
 
 .card h3 {
-    
+
     font-weight: bold;
     font-size: 26px;
     color: rgb(31, 63, 104);
@@ -185,7 +184,7 @@ button:hover {
 }
 
 .card_img {
-    margin: 50px 125px;
+    margin: 50px auto;
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -265,6 +264,91 @@ button:hover {
     justify-content: center;
 }
 
+
+
+.quastions {}
+
+.container {}
+
+.quastions__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+    margin-bottom: 50px;
+}
+
+.end {
+    text-align: end;
+}
+
+.question__title {
+    font-weight: bold;
+    font-size: 26px;
+    color: rgb(31, 63, 104);
+    margin-bottom: 10px;
+}
+
+.question__slug {
+    font-style: 20px;
+    color: rgb(31, 63, 104);
+    margin-bottom: 36px;
+    opacity: .8;
+}
+
+.contacts {}
+
+.contacts__inner {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 50px 0;
+    border-top: 2px solid rgba(31, 63, 104, .5);
+}
+
+.contacts__data {}
+
+.contact__text {}
+
+.contact__title {
+    font-size: 30px;
+    color: #1F3F68;
+    margin-bottom: 10px;
+}
+
+.contact__slug {
+    margin-bottom: 25px;
+    display: block;
+}
+a.contact__slug.two{
+    margin-bottom: 10px;
+}
+
+.contact__img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.contacts__map {
+    width: 600px;
+    height: 400px;
+}
+
+@media (max-width: 1035px) {
+    .contacts__inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts__data{
+        display: flex;
+    }
+    .contact__img{
+        margin-right: 50px;
+    }
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
     .main {
@@ -281,6 +365,11 @@ button:hover {
     .image {
         display: none;
     }
+    .contacts__map{
+
+        width: 90%;
+        height: auto;
+    }
 }
 
 @media (max-width: 635px) {
@@ -292,18 +381,28 @@ button:hover {
         font-size: 50px;
     }
 
+    .contacts__data{
+        display: block;
+    }
+    .contact__img{
+        width: 150px;
+    }
+
 }
 
 @media (max-width: 460px) {
     .main__wrapper {
         height: 100%;
     }
-    .card{
+
+    .card {
         width: 100%;
     }
-    .card h3{
+
+    .card h3 {
         font-size: 20px;
     }
+
     .card p {
         font-size: 16px;
         white-space: normal;
