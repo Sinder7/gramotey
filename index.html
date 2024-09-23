@@ -11,18 +11,19 @@
 </head>
 
 <body>
-    <div class="main__wrapper">
+    <div class="main__wrapper" id="top">
         <div class="container">
 
-            <nav class="nav"><a href="/" class="logo"><img src="src/img/logo.png" alt=""></a> <a href="docs.html"
-                    class="nav__text">Документация</a></nav>
+            <nav class="nav"><a href="/" class="logo"><img src="src/img/logo.png" alt=""></a>
+                <a href="#docs" class="nav__text">Документация</a>
+            </nav>
             <main class="main">
                 <div class="main__inner">
                     <h1 class="heading__title">Частная школа "Грамотей"</h1>
                     <p class="main__caption">
                         Миссия нашей школы - создать все усовия, чтобы раскрыть потенциал каждого ученика и подготовить
                         его к взролой жизни.</p>
-                    <button class="button">Связаться</button>
+                    <a href="#contacts" class="button">Связаться</a>
                 </div>
                 <div class="image">
                     <img src="src/img/ьфшт_рукщ.svg" alt="Описание изображения">
@@ -40,7 +41,8 @@
                     </div>
                     <h3>Основная программа</h3>
                     <p>В обучение включена основная программа и направление класса, которое выбрали его ученики.</p>
-                    <a onclick="openModal('Модальное окно 1', 'Дополнительная информация о карточке 1.')">Узнать
+                    <a
+                        onclick="openModal('Основная программа', 'В обучение включена основная программа и направление класса, которое выбрали его ученики.')">Узнать
                         подробнее</a>
                 </div>
                 <div class="card">
@@ -49,8 +51,9 @@
                     </div>
                     <h3>Дополнительная программа</h3>
                     <p>Программа строится на внеклассных активностях, которые не входят в основную программу обучения.
-                        .</p>
-                    <a onclick="openModal('Модальное окно 1', 'Дополнительная информация о карточке 1.')">Узнать
+                    </p>
+                    <a
+                        onclick="openModal('Дополнительная программа', 'Программа строится на внеклассных активностях, которые не входят в основную программу обучения.')">Узнать
                         подробнее</a>
                 </div>
                 <div class="card">
@@ -60,7 +63,8 @@
                     <h3>Летний лагерь</h3>
                     <p>Каждый год ученики вместе с преподавателями ездят в летний лагерь. Это бесплатно и включено в
                         программу в школу для всех учеников.</p>
-                    <a onclick="openModal('Модальное окно 1', 'Дополнительная информация о карточке 1.')">Узнать
+                    <a
+                        onclick="openModal('Летний лагерь', 'Каждый год ученики вместе с преподавателями ездят в летний лагерь. Это бесплатно и включено впрограмму в школу для всех учеников.')">Узнать
                         подробнее</a>
                 </div>
                 <div class="card">
@@ -70,7 +74,8 @@
                     <h3>Заочное обучение</h3>
                     <p>Наша школа предлагает услуги заочного образования, если ученик не может ходить в школу. Обучение
                         ведется по той же программе, что и в школе.</p>
-                    <a onclick="openModal('Модальное окно 1', 'Дополнительная информация о карточке 1.')">Узнать
+                    <a
+                        onclick="openModal('Заочное обучение', 'Наша школа предлагает услуги заочного образования, если ученик не может ходить в школу. Обучение ведется по той же программе, что и в школе.')">Узнать
                         подробнее</a>
                 </div>
             </div>
@@ -120,7 +125,7 @@
             </div>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__inner">
                 <div class="contacts__data">
@@ -140,6 +145,34 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="docs" id="docs">
+        <div class="container">
+            <div class="docs__inner">
+                <h3 class="docs__title">Программа обучения</h3>
+                <a href="src/file/ООП НОО ИП Никиевой А. А..docx" class="docs__media" download>ООП НОО ИП Никиевой
+                    А.А.</a>
+                </h2>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__row">
+                            <a href="/" class="docs__title footer__title">ГРАМОТЕЙ</a>
+                        </div>
+                        <div class="footer__col">
+                            <a href="tel:8 928 298 74 34" class="contact__slug two">8 928 298 74 34</a>
+                            <a href="tel:8 928 330 78 88" class="contact__slug">8 928 330 78 88</a>
+                        </div>
+                    </div>
+                    <div class="c">
+                        <p class="c__text">© 2024 Грамотей — Все права защищены</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </section>
     <script src="src/js/script.js"></script>
 </body>

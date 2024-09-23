@@ -127,7 +127,7 @@ body {
     transition: .7s;
 }
 
-button:hover {
+.button:hover {
     background-color: #1F3F68;
 }
 
@@ -205,16 +205,45 @@ button:hover {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
+    /* 
+    /* Увеличена непрозрачность фона */
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: 5% auto;
+    /* Уменьшено расстояние сверху для лучшего отображения */
     padding: 20px;
+    /* Увеличен отступ */
     border: 1px solid #888;
     width: 80%;
+    max-height: 80%;
+    /* Ограничение по высоте для мобильных устройств */
+    overflow-y: auto;
+    /* Прокрутка содержимого при необходимости */
+    border-radius: 8px;
+    /*
+    /* Закругленные углы */
+}
+
+#modal-title {
+    font-size: 1.5em;
+    /* Увеличенный размер шрифта для заголовка */
+    font-weight: bold;
+    /* Жирный шрифт для заголовка */
+    margin-bottom: 10px;
+    /* Отступ снизу */
+    border-bottom: 2px solid #ccc;
+    /* Разделительная линия */
+    padding-bottom: 80px;
+    /* Отступ снизу */
+}
+
+#modal-description {
+    font-size: 1.2em;
+    margin-top: 15px;
+    /* Увеличенный размер шрифта для основного текста */
 }
 
 .close {
@@ -321,7 +350,8 @@ button:hover {
     margin-bottom: 25px;
     display: block;
 }
-a.contact__slug.two{
+
+a.contact__slug.two {
     margin-bottom: 10px;
 }
 
@@ -336,15 +366,92 @@ a.contact__slug.two{
     height: 400px;
 }
 
+
+.docs {
+    position: relative;
+    background: #5A98D0;
+    border-radius: 150px 0 0 0;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.docs__inner {
+    padding-top: 48px;
+    padding-left: 18px;
+}
+
+.docs__title {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.docs__media {
+    color: white;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.footer {
+    background: #316099;
+    width: 95%;
+    height: 60%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 0 125px 0 0;
+}
+
+
+.footer__inner {
+    position: relative;
+    padding-top: 48px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.footer__row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer__col a {
+    color: rgb(255, 255, 255);
+}
+
+
+.c {
+    position: absolute;
+    bottom: 0;
+}
+
+.c__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    color: rgb(255, 255, 255);
+}
+
 @media (max-width: 1035px) {
-    .contacts__inner{
+    .contacts__inner {
         flex-direction: column;
         align-items: center;
     }
-    .contacts__data{
+
+    .contacts__data {
         display: flex;
     }
-    .contact__img{
+
+    .contact__img {
         margin-right: 50px;
     }
 }
@@ -365,7 +472,8 @@ a.contact__slug.two{
     .image {
         display: none;
     }
-    .contacts__map{
+
+    .contacts__map {
 
         width: 90%;
         height: auto;
@@ -381,16 +489,21 @@ a.contact__slug.two{
         font-size: 50px;
     }
 
-    .contacts__data{
+    .contacts__data {
         display: block;
     }
-    .contact__img{
+
+    .contact__img {
         width: 150px;
     }
 
 }
 
 @media (max-width: 460px) {
+    .heading__title {
+        font-size: 40px;
+    }
+
     .main__wrapper {
         height: 100%;
     }
@@ -407,4 +520,24 @@ a.contact__slug.two{
         font-size: 16px;
         white-space: normal;
     }
+
+
+    .docs__title {
+        font-size: 24px;
+    }
+
+    .docs__media {
+        font-size: 16px;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+    }
+
+    .footer__title {
+        margin-bottom: 30px;
+    }
+
+
+
 }
